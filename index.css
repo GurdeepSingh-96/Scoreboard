@@ -1,8 +1,52 @@
 body {
     margin: 0;
+    background: #1B244A;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+}
+
+.display-el {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: black;
+    color: #f94f6d;
+    font-size: 80px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 6px; 
+}
+
+.buttons button{
+    width: 35px; 
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: white;
+    border-color: white;
+    background-color: rgba(154, 171, 216, 0.1); 
 }
