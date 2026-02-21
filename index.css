@@ -26,6 +26,7 @@ h3 {
     font-size: 80px;
     font-family: monospace;
     text-align: center;
+    text-shadow: 0 0 20px rgba(249, 79, 109, 0.6);
 }
 
 .buttons {
