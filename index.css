@@ -1,6 +1,18 @@
+@font-face {
+    font-family: Cursed Timer;
+    src: url(font/CursedTimerUlil-Aznm.ttf);
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
     margin: 0;
     background: #1B244A;
+    background: radial-gradient(circle, #243166 0%, #1B244A 100%);
 }
 
 h3 {
@@ -12,6 +24,7 @@ h3 {
 .container {
     display: flex;
     justify-content: space-around;
+    gap: 100px;
 }
 
 .display-el {
@@ -20,12 +33,12 @@ h3 {
     align-items: center; 
     margin-bottom: 20px;
     padding: 20px 40px;
-    border-radius: 5px;
     background: black;
     color: #f94f6d;
     font-size: 80px;
-    font-family: monospace;
+    font-family: Cursed Timer;
     text-align: center;
+    border-radius: 5px;
     text-shadow: 0 0 20px rgba(249, 79, 109, 0.6);
 }
 
@@ -38,15 +51,31 @@ h3 {
 .buttons button{
     width: 35px; 
     aspect-ratio: 1/1;
-    border-radius: 5px;
     background: none;
     border: 2px solid #9AABD8;
     color: #9AABD8;
     text-align: center;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .buttons button:hover {
+    color: white;
+    border-color: white;
+    background-color: rgba(154, 171, 216, 0.1); 
+}
+
+#reset-btn {
+    padding: 5px;
+    background: none;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#reset-btn:hover{
     color: white;
     border-color: white;
     background-color: rgba(154, 171, 216, 0.1); 
